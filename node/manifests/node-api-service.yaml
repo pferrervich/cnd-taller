@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-api-cnd
+spec:
+  type: ClusterIP
+  ports:
+  - name: "node-api-cnd-service"
+    port: 3000
+  selector:
+    app: node-api-cnd

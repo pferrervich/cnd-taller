@@ -1,0 +1,7 @@
+Dockerfile
+okteto.yml
+.stfolder
+.stignore
+.git
+.gitignore
+.dockerignore

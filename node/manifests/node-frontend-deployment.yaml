@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node-frontend-cnd
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: node-frontend-cnd
+    spec:
+      containers:
+      - image: pchico83/node-frontend-cnd:0.1
+        imagePullPolicy: Always
+        name: node-frontend-cnd

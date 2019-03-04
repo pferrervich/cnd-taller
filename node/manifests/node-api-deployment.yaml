@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node-api-cnd
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: node-api-cnd
+    spec:
+      containers:
+      - image: pchico83/node-api-cnd:0.1
+        imagePullPolicy: Always
+        name: node-api-cnd

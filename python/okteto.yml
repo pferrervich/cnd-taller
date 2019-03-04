@@ -1,0 +1,9 @@
+swap:
+  deployment:
+    name: python-cnd
+    runAsUser: 1001
+    command: ["python", "app.py"]
+forward:
+  - 8080:8080
+mount:
+  target: /usr/src/app

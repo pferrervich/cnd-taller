@@ -1,0 +1,8 @@
+swap:
+  deployment:
+    name: node-api-cnd
+    command:
+    - yarn
+    - start
+mount:
+  target: /usr/src/app

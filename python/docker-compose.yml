@@ -1,0 +1,5 @@
+version: "3.4"
+services:
+  builder:
+    image: pchico83/python-cnd:0.1
+    build: .
