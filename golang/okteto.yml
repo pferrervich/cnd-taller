@@ -1,11 +1,5 @@
-swap:
-  deployment:
-    name: go-cnd
-    command: ["bash"]
-mount:
-  target: /app
+name: go-cnd
+command: ["bash"]
+workdir: /app
 forward:
   - 8080:8080 
-scripts:
-  start: go run main.go
-  test: go test ./...

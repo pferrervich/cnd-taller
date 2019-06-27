@@ -7,7 +7,6 @@ import json
 option_a = os.getenv('OPTION_A', 'Otters')
 option_b = os.getenv('OPTION_B', 'Dogs')
 hostname = socket.gethostname()
-namespace = os.getenv('CND_KUBERNETES_NAMESPACE', 'localhost')
 votes = {option_a: 0, option_b: 0}
 
 app = Flask(__name__)
@@ -25,8 +24,7 @@ def hello():
         option_b=option_b,
         hostname=hostname,
         votes_a=votes[option_a],
-        votes_b=votes[option_b],
-        namespace=namespace
+        votes_b=votes[option_b]
     ))
     return resp
 

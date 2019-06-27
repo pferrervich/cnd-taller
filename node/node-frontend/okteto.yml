@@ -1,9 +1,5 @@
-swap:
-  deployment:
-    name: node-frontend-cnd
-    command:
-    - yarn
-    - start
-mount:
-  target: /usr/src/app
-
+name: node-frontend-cnd
+workdir: /usr/src/app
+command:
+  - yarn
+  - start
