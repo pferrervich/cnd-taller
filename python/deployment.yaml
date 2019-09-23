@@ -1,13 +1,14 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-cnd
+  labels:
+    app: python-cnd
 spec:
   replicas: 1
-  template:
-    metadata:
-      labels:
-        app: python-cnd
+  selector:
+    matchLabels:
+      app: python-cnd
     spec:
       securityContext:
         runAsUser: 1001
