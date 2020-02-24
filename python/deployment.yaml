@@ -9,10 +9,14 @@ spec:
   selector:
     matchLabels:
       app: python-cnd
+  template:
+    metadata:
+      labels:
+        app: python-cnd
     spec:
       securityContext:
         runAsUser: 1001
         fsGroup: 1001
       containers:
-      - image: pchico83/python-cnd:0.1
-        name: vote
+        - image: pferrervich/python-cnd:0.1
+          name: vote
