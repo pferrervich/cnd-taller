@@ -15,7 +15,7 @@ spec:
         app: go-cnd
     spec:
       containers:
-      - image: pchico83/go-cnd:0.2
-        name: go-cnd
-        ports:
-        - containerPort: 8080
+        - image: pferrervich/go-cnd:0.2
+          name: go-cnd
+          ports:
+            - containerPort: 8080

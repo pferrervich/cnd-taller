@@ -11,6 +11,6 @@ spec:
       app: node-frontend-cnd
     spec:
       containers:
-      - image: pchico83/node-frontend-cnd:0.1
-        imagePullPolicy: Always
-        name: node-frontend-cnd
+        - image: pferrervich/node-frontend-cnd:0.1
+          imagePullPolicy: Always
+          name: node-frontend-cnd

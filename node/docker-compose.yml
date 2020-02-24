@@ -1,8 +1,8 @@
 version: "3.4"
 services:
   builder-api:
-    image: pchico83/node-api-cnd:0.1
+    image: pferrervich/node-api-cnd:0.1
     build: node-api
   builder-frontend:
-    image: pchico83/node-frontend-cnd:0.1
+    image: pferrervich/node-frontend-cnd:0.1
     build: node-frontend

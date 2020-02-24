@@ -14,6 +14,6 @@ spec:
       labels:
         app: node-api-cnd
       containers:
-      - image: pchico83/node-api-cnd:0.1
-        imagePullPolicy: Always
-        name: node-api-cnd
+        - image: pferrervich/node-api-cnd:0.1
+          imagePullPolicy: Always
+          name: node-api-cnd
